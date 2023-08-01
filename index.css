@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./Artboard\ 1-100.jpg);
+    background-size: 100%;
+    font-family:sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    position: relative;
+    height: 450px;
+    width: 920px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: 1px solid #fff;
+
+}
+
+.container .days {
+    display: flex;
+    flex-wrap: wrap
+}
+
+
+.container .number-noactive,
+.container .number-red,
+.container .number,
+.container .day-red,
+.container .day {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    margin-top: 5px;
+    font-weight: bold;
+
+
+}
+
+.container .number-noactive {
+    color: gray;
+    font-weight: bold;
+    border: 1px solid gray;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 10px;
+
+
+}
+
+.container .number {
+    color: black;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid white;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 10px;
+
+
+}
+
+.container .number-red {
+    font-weight: bold;
+    transition: box-shadow .3s;
+    color: rgb(220, 19, 19);
+    background-color: #fff;
+    border: 1px solid white;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 10px;
+
+}
+
+.container .date {
+    color: #929692;
+    width: 500px;
+    padding: 30px;
+    margin-left: 45%;
+
+
+}
+
+.container .day-red {
+    color: red
+}
+
+.container h3 {
+    font-size: 30px;
+    font-weight: 700px;
+    color: #7692ae;
+    margin: 0 8px 20px;
+}
+
+.container .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container img {
+    height: 430px;
+    width: 400px;
+    border-radius: 45px;
+    padding: 30px;
+}
+
+.container .number-red:hover {
+    border: 2px solid red;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.container .number:hover {
+    box-shadow: 5px 10px 8px #888888;
+    color: rgb(44, 182, 58);
+}
